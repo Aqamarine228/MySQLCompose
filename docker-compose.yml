@@ -19,3 +19,8 @@ services:
       - .env
     volumes:
       - ./db:/backup
+
+networks:
+  default:
+    name: 'mysql-network'
+    external: true
